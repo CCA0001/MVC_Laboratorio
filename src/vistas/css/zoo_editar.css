@@ -1,0 +1,35 @@
+body {
+    background-color: #d7f2d8;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h1{
+    text-align: center;
+      color:#1a901e;
+}
+.fondo_inputs {
+    background-color: #d7f9dd;
+    border-radius: 30px;
+    padding: 40px 60px;  
+    margin: 0 auto;
+    width: fit-content;
+    min-width: 400px;   
+    text-align: center;
+}
+.cuadro_blanco_fondo{
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    padding: 30px;
+    margin: 0 auto;
+    width: 90%;
+    max-width: 1200px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+.imagen_curiosos {
+    position: fixed;
+    top: 110px;
+    right: 1100px;
+    z-index: 9999;
+    width: 100px;
+    pointer-events: none;
+}
+

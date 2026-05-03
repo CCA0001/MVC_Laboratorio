@@ -9,7 +9,7 @@
     }
 
     if($accion === 'crear' && $_SERVER['REQUEST_METHOD'] === 'POST'){
-        crearAnimal($conn, $_POST['nombre'], $_POST['especie'], $_POST['sexo']);
+        crearAnimal($conn, $_POST['nombre'], $_POST['especie'], $_POST['edad']);
         header('Location: index.php');
         exit;
     }
