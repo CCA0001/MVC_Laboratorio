@@ -7,7 +7,7 @@
 
 <body>
 <div class="imagen_curiosos">
-<img src="/vistas/imagenes/curiosos.png"alt="curiosos" style="width: 900px;"></div>
+<img src="/vistas/css/imagenes/curiosos.png"alt="curiosos" style="width: 900px;"></div>
 
 <div class="cuadro_blanco_fondo">
   <h1>Editar Animal</h1>

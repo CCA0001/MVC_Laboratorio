@@ -19,15 +19,15 @@
   <div class="fondo_inputs">
 
  <div class="imagen_leon">
-<img src="/vistas/imagenes/leon.png" alt="leon" style="width: 300px;"></div>
+<img src="/vistas/css/imagenes/leon.png" alt="leon" style="width: 300px;"></div>
   <div class="fondo_inputs">
   
    <div class="imagen_planta">
-<img src="/vistas/imagenes/planta.png" alt="planta" style="width: 300px;"></div>
+<img src="/vistas/css/imagenes/planta.png" alt="planta" style="width: 300px;"></div>
  <div class="fondo_inputs">
 
   <div class="imagen_planta2">
-<img src="/vistas/imagenes/planta.png" alt="planta" style="width: 300px;"></div>
+<img src="/vistas/css/imagenes/planta.png" alt="planta" style="width: 300px;"></div>
  <div class="fondo_inputs">
 
  <form method="POST" action="index.php?accion=crear">
