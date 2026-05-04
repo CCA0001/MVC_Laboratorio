@@ -12,7 +12,9 @@ RUN apt-get update && apt-get install -y \
 
 RUN a2enmod php8.1 rewrite
 
-RUN rm /var/www/html/index.html 2>/dev/null || true
+# Eliminar página por defecto de Apache
+RUN rm -rf /var/www/html/*
+
 COPY src/index.php /var/www/html/index.php
 COPY src/config/ /var/www/html/config/
 COPY src/controladores/ /var/www/html/controladores/
