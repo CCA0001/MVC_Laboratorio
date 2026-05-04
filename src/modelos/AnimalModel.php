@@ -6,13 +6,13 @@
         return $conn->query("SELECT * FROM animales");
     }
 
-    function crearAnimal($conn, $nombre, $especie, $sexo){
-        $stmt = $conn->prepare("INSERT INTO animales (nombre, especie, edad) VALUES (?,?)");
+    function crearAnimal($conn, $nombre, $especie, $edad){
+        $stmt = $conn->prepare("INSERT INTO animales (nombre, especie, edad) VALUES (?,?,?)");
         $stmt->execute([$nombre, $especie, $edad]);
     }
 
     function eliminarAnimal($conn, $id){
-        $stmt = $conn->prepare("DELETE FROM usuarios WHERE id = ?");
+        $stmt = $conn->prepare("DELETE FROM animales WHERE id = ?");
         $stmt->execute([$id]);
     }
 
