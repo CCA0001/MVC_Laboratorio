@@ -1,6 +1,7 @@
 FROM ubuntu:22.04
 
 ENV DEBIAN_FRONTEND=noninteractive
+ENV CACHEBUST=1
 
 RUN apt-get update && apt-get install -y \
     apache2 \
@@ -11,7 +12,6 @@ RUN apt-get update && apt-get install -y \
 
 RUN a2enmod php8.1 rewrite
 
-# Limpiar y copiar app
 RUN rm /var/www/html/index.html 2>/dev/null || true
 COPY src/index.php /var/www/html/index.php
 COPY src/config/ /var/www/html/config/
