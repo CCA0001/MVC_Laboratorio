@@ -8,7 +8,7 @@
 <body>
 
 <div class="cuadro_blanco_fondo">
-    <img src="/vistas/css/imagenes/lobitoauuuuuuu.jpg">
+    <img src="/vistas/css/imagenes/loboauuuuuuu.jpg">
 
 <div class="Ingresar_Animales">
 
