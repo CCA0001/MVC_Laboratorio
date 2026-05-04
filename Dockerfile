@@ -11,9 +11,14 @@ RUN apt-get update && apt-get install -y \
 
 RUN a2enmod php8.1 rewrite
 
-# Eliminar página por defecto y copiar tu app
-RUN rm -rf /var/www/html/*
-COPY src/ /var/www/html/
+# Limpiar y copiar app
+RUN rm /var/www/html/index.html 2>/dev/null || true
+COPY src/index.php /var/www/html/index.php
+COPY src/config/ /var/www/html/config/
+COPY src/controladores/ /var/www/html/controladores/
+COPY src/modelos/ /var/www/html/modelos/
+COPY src/vistas/ /var/www/html/vistas/
+
 RUN chown -R www-data:www-data /var/www/html
 
 COPY start.sh /start.sh
