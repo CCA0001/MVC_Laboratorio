@@ -15,7 +15,7 @@
 
 <small> Ingrese un animal nuevo llenando los siguientes campos </small>
 <div class="imagen_panda">
-<img src="/vistas/imagenes/pandita.png" alt="panda" style="width: 300px;"></div>
+<img src="/vistas/css/imagenes/pandita.png" alt="panda" style="width: 300px;"></div>
   <div class="fondo_inputs">
 
  <div class="imagen_leon">
