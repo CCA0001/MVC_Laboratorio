@@ -8,6 +8,7 @@
 <body>
 
 <div class="cuadro_blanco_fondo">
+    <img src="/vistas/css/imagenes/lobitoauuuuuuu.jpg">
 
 <div class="Ingresar_Animales">
 
