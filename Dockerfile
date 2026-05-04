@@ -14,6 +14,7 @@ RUN a2enmod php8.1 rewrite
 COPY src/ /var/www/html/
 RUN chown -R www-data:www-data /var/www/html
 
-EXPOSE 80
+COPY start.sh /start.sh
+RUN chmod +x /start.sh
 
-CMD ["apache2ctl", "-D", "FOREGROUND"]
+CMD ["/start.sh"]
