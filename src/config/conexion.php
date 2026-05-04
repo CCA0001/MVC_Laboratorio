@@ -1,10 +1,11 @@
 <?php
-    $host = getenv('MYSQL_HOST') ?: 'mariadb';
-    $db   = getenv('MYSQL_DATABASE');
-    $user = getenv('MYSQL_USER');
-    $pass = getenv('MYSQL_PASSWORD');
+    $host = getenv('PGHOST');
+    $db   = getenv('PGDATABASE');
+    $user = getenv('PGUSER');
+    $pass = getenv('PGPASSWORD');
+    $port = getenv('PGPORT') ?: '5432';
 
-    $conn = new PDO("mysql:host=$host;dbname=$db;charset=utf8", $user, $pass);
+    $conn = new PDO("pgsql:host=$host;port=$port;dbname=$db", $user, $pass);
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     $conn->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
 ?>
