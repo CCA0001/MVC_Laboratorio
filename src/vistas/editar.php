@@ -14,10 +14,9 @@
 
     <form method="POST" action="index.php?accion=actualizar">
    <input type="hidden" name="id" value="<?= $animal['id'] ?>">
-<div class="fondo_inputs">
     <input type="text" name="nombre" class="form-control" style="width: 300px; margin-bottom: 15px;" value="<?= $animal['nombre'] ?>"  required>
     <input type="text" name="especie" class="form-control" style="width: 300px; margin-bottom: 15px;"value="<?= $animal['especie'] ?>" required>
-    <input type="number" name="edad" class="form-control" value="5" style="width: 300px; margin-bottom: 15px;" value="<?= $animal['edad'] ?>
+    <input type="number" name="edad" class="form-control" style="width: 300px; margin-bottom: 15px;" value="<?= $animal['edad'] ?>
     <div style="margin-top: 20px;">
         <button type="submit" class="btn btn-success">Guardar</button>
         <a href="/index.php" class="btn btn-danger">Cancelar</a></div>
