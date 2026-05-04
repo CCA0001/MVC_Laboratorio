@@ -1,7 +1,7 @@
 FROM ubuntu:22.04
 
 ENV DEBIAN_FRONTEND=noninteractive
-ENV CACHEBUST=2
+ENV CACHEBUST=3
 
 RUN apt-get update && apt-get install -y \
     apache2 \
