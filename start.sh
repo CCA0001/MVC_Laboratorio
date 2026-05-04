@@ -3,7 +3,9 @@ set -e
 
 PORT=${PORT:-80}
 
-# Debug: mostrar archivos en /var/www/html
+# Eliminar index.html con fuerza
+rm -f /var/www/html/index.html
+
 echo "=== Contenido de /var/www/html ==="
 ls -la /var/www/html/
 
