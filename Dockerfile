@@ -6,8 +6,10 @@ RUN apt-get update && apt-get install -y nginx && rm -rf /var/lib/apt/lists/*
 
 COPY nginx.conf /etc/nginx/sites-available/default
 
-RUN echo '#!/bin/sh\nphp-fpm -D\nnginx -g "daemon off;"' > /start.sh && chmod +x /start.sh
+COPY src/ /var/www/html/
+
+RUN chown -R www-data:www-data /var/www/html
 
 EXPOSE 80
 
-CMD ["/start.sh"]
+CMD bash -c "php-fpm -D && nginx -g 'daemon off;'"
